@@ -49,3 +49,9 @@ function diviFuncion() {
     resul = numuno / numdos;
     document.getElementById('resultado').innerHTML = `${resul}`;
 }
+document.getElementById("clear").addEventListener("click", clearFuncion);
+function clearFuncion() {
+    document.getElementById('numuno').value = ``;
+    document.getElementById('numdos').value = ``;
+    document.getElementById('resultado').innerHTML = `0`;
+}
